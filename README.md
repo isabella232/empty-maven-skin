@@ -1,10 +1,7 @@
-# Blank Maven skin
+# Empty Maven skin
 
-Blank Maven skin renders the Maven site pages without any additional skinning or decoration.
+Empty Maven skin renders the Maven site pages without any additional skinning or decoration.
 It only outputs the contents of each page.
-
-The skin uses short title as output's `<title>` tag. If one is not available, tries to derive
-it from the first `<h1>` header in the content.
 
 ## Usage
 
@@ -14,15 +11,15 @@ To use this Maven skin, include it in your `site.xml` file:
 <project>
   ...
   <skin>
-    <groupId>lt.velykis.maven.skins</groupId>
-    <artifactId>blank-maven-skin</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.example</groupId>
+    <artifactId>empty-maven-skin</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
   </skin>
   ...
 </project>
 ```
 
-The skin requires Velocity >= 1.7 when generating Maven site.
+The skin requires Velocity >= 1.7 when generating Maven site?
 Add it as a dependency to `maven-site-plugin` in your POM file:
 
 ```xml
@@ -35,7 +32,7 @@ Add it as a dependency to `maven-site-plugin` in your POM file:
       <version>3.2</version>
       <dependencies>
         ...
-        <!-- Blank skin requires Velocity >= 1.7  -->
+        <!-- Empty skin requires Velocity >= 1.7  -->
         <dependency>
           <groupId>org.apache.velocity</groupId>
           <artifactId>velocity</artifactId>
@@ -50,13 +47,6 @@ Add it as a dependency to `maven-site-plugin` in your POM file:
 </build>
 ```
 
-## Bug tracker
-
-Have a bug or a feature request? Please create an issue here on GitHub that conforms with
-[necolas's guidelines](http://github.com/necolas/issue-guidelines).
-
-http://github.com/andriusvelykis/blank-maven-skin/issues
-
 
 ## Contributing
 
@@ -65,12 +55,12 @@ Fork the repository and submit pull requests.
 
 ## Author
 
+The empty maven skin is based on the blank maven skin, by:
+
 **Andrius Velykis**
 
 + http://andrius.velykis.lt
 + http://github.com/andriusvelykis
-
-
 
 ## Copyright and license
 
